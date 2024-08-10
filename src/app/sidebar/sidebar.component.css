@@ -1,0 +1,43 @@
+.side-nav {
+  width: 240px;
+  background-color: #f9f9f9;
+  position: fixed;
+  top: 50px; /* Below the top navbar */
+  left: 0;
+  height: 100%;
+  padding-top: 20px;
+  border-right: 1px solid #ddd;
+  z-index: 999; /* Ensure it's below the navbar */
+}
+
+.side-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-nav ul li {
+  margin: 10px 0;
+}
+
+.side-nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.side-nav ul li a span {
+  margin-right: 20px;
+}
+
+.side-nav ul li.divider {
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+.active {
+  background-color: #e6e6e6;
+  font-weight: bold;
+}

@@ -1,0 +1,57 @@
+/* Adjust this to ensure the search bar is centered */
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.search-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+}
+
+mat-form-field {
+  width: 100%; /* Take full width within the container */
+  max-width: 500px; /* Optional: Limit maximum width */
+  margin-right: 8px;
+}
+
+mat-icon-button {
+  margin: 0 4px;
+}
+/* Default styling for larger screens */
+.search-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+}
+
+/* Default styling for larger screens */
+.search-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
+
+  mat-form-field {
+    width: 100%; /* Full width on small screens */
+    max-width: none; /* Remove maximum width limit */
+  }
+}
