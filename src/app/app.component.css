@@ -1,0 +1,43 @@
+.content {
+    margin-left: 240px; /* Adjust according to the sidebar width */
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+  }
+  .layout {
+    display: flex;
+  }
+  
+  .layout {
+    display: flex;
+  }
+  
+  .top-nav {
+    width: calc(100% - 240px); /* Adjust to leave space for sidebar */
+    margin-left: 240px; /* Adjust margin based on sidebar width */
+  }
+  
+  .side-nav {
+    width: 240px;
+    background-color: #f9f9f9;
+    position: fixed;
+    top: 50px; /* Below the top navbar */
+    left: 0;
+    height: 100%;
+    padding-top: 20px;
+    border-right: 1px solid #ddd;
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  
+  .side-nav-hidden {
+    transform: translateX(-100%); /* Hide sidebar off-screen */
+  }
+  
+  .main-content {
+    margin-left: 240px; /* Adjust margin based on sidebar width */
+  }
+  
+  .side-nav-hidden + .main-content {
+    margin-left: 0; /* Remove margin when sidebar is hidden */
+  }
+  
